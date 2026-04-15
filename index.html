@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tường Như | Personal Website</title>
+    <meta name="description" content="Trang web cá nhân chuyên nghiệp của Tường Như. Khám phá các dự án và thông tin cá nhân.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-blur"></div>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Tường Như</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+            <div class="mobile-toggle" id="mobile-toggle">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h2 class="reveal">Xin chào, mình là</h2>
+                <h1 class="reveal">Tường Như</h1>
+                <p class="reveal">Sinh ngày: 29/04/2008</p>
+                <p class="reveal">Một người luôn sáng tạo và tìm kiếm những giá trị mới mẻ trong cuộc sống. Chào mừng bạn đến với không gian cá nhân của mình.</p>
+                <div class="hero-btns reveal">
+                    <a href="https://www.facebook.com/miko.kinomoto/" target="_blank" class="btn btn-primary">Facebook của mình</a>
+                    <a href="#projects" class="btn btn-secondary">Xem dự án</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section glass-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="reveal">Về mình</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <p>Mình tin rằng mỗi cá nhân đều có một câu chuyện riêng để kể. Trang web này không chỉ là nơi lưu giữ những kỷ niệm, mà còn là hành trình khám phá và phát triển bản thân.</p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span class="stat-num">05+</span>
+                                <span class="stat-label">Năm kinh nghiệm</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num">50+</span>
+                                <span class="stat-label">Dự án hoàn thành</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="reveal">Dự án tiêu biểu</h2>
+                </div>
+                <div class="project-grid">
+                    <!-- Project Card 1 -->
+                    <div class="project-card reveal glass">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" alt="Dự án 1">
+                        </div>
+                        <div class="project-info">
+                            <h3>Thiết kế thương hiệu</h3>
+                            <p>Xây dựng bộ nhận diện thương hiệu hiện đại và tối giản.</p>
+                            <a href="#" class="project-link">Chi tiết &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="project-card reveal glass">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800" alt="Dự án 2">
+                        </div>
+                        <div class="project-info">
+                            <h3>Phát triển Web</h3>
+                            <p>Tạo ra các ứng dụng web hiệu năng cao với trải nghiệm mượt mà.</p>
+                            <a href="#" class="project-link">Chi tiết &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="glass contact-container reveal">
+                    <div class="section-title">
+                        <h2>Gửi lời chào</h2>
+                        <p>Bạn có ý tưởng hay cần hợp tác? Đừng ngần ngại nhắn cho mình nhé!</p>
+                    </div>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Tên của bạn" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Email liên hệ" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Tin nhắn của bạn" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">Gửi tin nhắn</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tường Như. Designed with love.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+</html>
